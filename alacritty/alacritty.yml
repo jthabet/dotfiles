@@ -114,8 +114,8 @@ selection:
 cursor:
   # Cursor style
   style:
-    shape: Beam
-    blinking: On
+    shape: Block
+    blinking: Always
 
   # unfocused_hollow: false
 
@@ -175,7 +175,7 @@ mouse_bindings:
 # Custom Keybindings
 key_bindings:
   # - { key: Paste, action: Paste }
-  # - { key: Copy, action: Copy }
+  - { key: Copy, action: Copy }
   # - { key: L, mods: Control, action: ClearLogNotice }
   # - { key: L, mods: Control, mode: ~Vi|~Search, chars: "\x0c" }
   - { key: PageUp, mods: Shift, mode: ~Alt, action: ScrollPageUp }
@@ -233,7 +233,7 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (macOS only)
-  # - { key: K, mods: Command, mode: ~Search, chars: "\x0c" }
+  - { key: K, mods: Command, mode: ~Search, chars: "\x0c" }
   - { key: K, mods: Command, mode: ~Search, action: ClearHistory }
   # - { key: Key0, mods: Command, action: ResetFontSize }
   # - { key: Equals, mods: Command, action: IncreaseFontSize }
@@ -254,7 +254,7 @@ key_bindings:
   - { key: B, mods: Command, mode: ~Search, action: SearchBackward }
 
 # Live config reload (changes require restart)
-live_config_reload: true
+live_config_reload: false
 
 # Keep the log file after quitting Alacritty.
 persistent_logging: false
