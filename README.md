@@ -3,3 +3,7 @@
 ## Alacritty
 
 Many keys are different on an AZERTY layout.
+
+## Homebrew
+
+`brew bundle`
