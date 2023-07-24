@@ -3,8 +3,8 @@ env:
 
 window:
   dimensions:
-    columns: 184
-    lines: 45
+    columns: 218
+    lines: 50
 
   # Window position (changes require restart)
   #
@@ -112,12 +112,12 @@ cursor:
   # Cursor style
   style:
     shape: Block
-    blinking: Always
+    blinking: On
 
   # unfocused_hollow: false
 
 shell:
-  program: /usr/local/bin/tmux
+  program: /opt/homebrew/bin/tmux
   args:
     - new-session
     - -A
@@ -185,8 +185,8 @@ key_bindings:
   - { key: Tab, mods: Control, chars: "\x02\x6F" }
 
   # Select window from left or right
-  - { key: Left, mods: Control|Shift, chars: "\x02\x70" }
-  - { key: Right, mods: Control|Shift, chars: "\x02\x6e" }
+  - { key: Left, mods: Command|Shift, chars: "\x02\x70" }
+  - { key: Right, mods: Command|Shift, chars: "\x02\x6e" }
 
   # Split panes Vertical and Horizontal
   - { key: D, mods: Command, chars: "\x02\x25" }
