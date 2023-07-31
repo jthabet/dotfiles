@@ -1,3 +1,5 @@
+# Remove all aliases from plugins
+zstyle ':omz:plugins:*' aliases no
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -70,7 +72,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git flutter golang npm kubectl)
+plugins=(git golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,8 +114,11 @@ export GOBIN=$GOPATH/bin
 # flutter
 export PATH="$PATH:/usr/local/flutter/bin"
 
-#1password cli
+# 1password cli
 eval "$(op completion zsh)"; compdef _op op
+
+# 1password SSH agent
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
