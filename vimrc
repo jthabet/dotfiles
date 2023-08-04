@@ -1,4 +1,11 @@
 syntax on
+set mouse=a                     "Enable mouse mode
+
+
+if !has('nvim')
+  set ttymouse=xterm2
+  set ttyscroll=3
+endif
 
 " increase max memory to show syntax highlighting for large files
 set maxmempattern=20000
