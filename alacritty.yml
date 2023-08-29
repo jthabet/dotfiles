@@ -117,7 +117,7 @@ cursor:
   # unfocused_hollow: false
 
 shell:
-  program: /opt/homebrew/bin/tmux
+  program: /usr/local/bin/tmux
   args:
     - new-session
     - -A
@@ -171,10 +171,11 @@ mouse_bindings:
 
 # Custom Keybindings
 key_bindings:
-  - { key: Paste, action: Paste }
-  - { key: Copy, action: Copy }
-  # - { key: L, mods: Control, action: ClearLogNotice }
-  # - { key: L, mods: Control, mode: ~Vi|~Search, chars: "\x0c" }
+  - { key: Q, mods: Command, action: Quit }
+  - { key: V, mods: Command, action: Paste }
+  - { key: C, mods: Command, action: Copy }
+  - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: L, mods: Control, chars: "\x0c" }
   - { key: PageUp, mods: Shift, mode: ~Alt, action: ScrollPageUp }
   - { key: PageDown, mods: Shift, mode: ~Alt, action: ScrollPageDown }
   - { key: Home, mods: Shift, mode: ~Alt, action: ScrollToTop }
@@ -192,10 +193,10 @@ key_bindings:
   - { key: D, mods: Command, chars: "\x02\x25" }
   - { key: D, mods: Command|Shift, chars: "\x02\x22" }
 
-  # - { key: H, mods: Command, chars: "\x02\x68" }
-  # - { key: J, mods: Command, chars: "\x02\x6a" }
-  # - { key: K, mods: Command, chars: "\x02\x6b" }
-  # - { key: L, mods: Command, chars: "\x02\x6c" }
+  - { key: H, mods: Command, chars: "\x02\x68" }
+  - { key: J, mods: Command, chars: "\x02\x6a" }
+  #- { key: K, mods: Command, chars: "\x02\x6b" }
+  - { key: L, mods: Command, chars: "\x02\x6c" }
 
   # New window
   - { key: T, mods: Command, chars: "\x02\x63" }
@@ -213,8 +214,8 @@ key_bindings:
   - { key: 25, mods: Command, chars: "\x02\x39" }
 
   # Move sementically
-  - { key: Left, mods: Alt, chars: "\x1BB" }
-  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left, mods: Alt|Option, chars: "\eb" }
+  - { key: Right, mods: Alt|Option, chars: "\ef" }
 
   # Search Mode
   #- { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
@@ -230,23 +231,22 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (macOS only)
-  - { key: K, mods: Command, mode: ~Search, chars: "\x0c" }
-  - { key: K, mods: Command, mode: ~Search, action: ClearHistory }
+  #- { key: K, mods: Command, chars: "\x0b" }
+  - { key: K, mods: Command, action: ClearHistory }
+  # - { key: K, mods: Command, mode: ~Search, action: ClearHistory }
   # - { key: Key0, mods: Command, action: ResetFontSize }
   # - { key: Equals, mods: Command, action: IncreaseFontSize }
   # - { key: Plus, mods: Command, action: IncreaseFontSize }
   # - { key: NumpadAdd, mods: Command, action: IncreaseFontSize }
   # - { key: Minus, mods: Command, action: DecreaseFontSize }
   # - { key: NumpadSubtract, mods: Command, action: DecreaseFontSize }
-  - { key: V, mods: Command, action: Paste }
-  - { key: C, mods: Command, action: Copy }
+
   # - { key: C, mods: Command, mode: Vi|~Search, action: ClearSelection }
   # - { key: H, mods: Command, action: Hide }
   # - { key: H, mods: Command|Alt, action: HideOtherApplications }
-  - { key: M, mods: Command, action: Minimize }
-  - { key: Q, mods: Command, action: Quit }
+  # - { key: M, mods: Command, action: Minimize }
   # - { key: N, mods: Command, action: CreateNewWindow }
-  - { key: F, mods: Command|Control, action: ToggleFullscreen }
+  # - { key: F, mods: Command|Control, action: ToggleFullscreen }
   - { key: F, mods: Command, mode: ~Search, action: SearchForward }
   - { key: B, mods: Command, mode: ~Search, action: SearchBackward }
 
