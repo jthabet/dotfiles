@@ -174,7 +174,7 @@ key_bindings:
   - { key: Q, mods: Command, action: Quit }
   - { key: V, mods: Command, action: Paste }
   - { key: C, mods: Command, action: Copy }
-  # - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: L, mods: Control, action: ClearLogNotice }
   - { key: L, mods: Control, chars: "\x0c" }
   - { key: PageUp, mods: Shift, mode: ~Alt, action: ScrollPageUp }
   - { key: PageDown, mods: Shift, mode: ~Alt, action: ScrollPageDown }

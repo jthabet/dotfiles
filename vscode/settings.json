@@ -1,0 +1,75 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "[javascript][javascriptreact][typescript][typescriptreact][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.cursorBlinking": true,
+
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "git.autofetch": true,
+  "redhat.telemetry.enabled": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "files.exclude": {
+    "**/.idea": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["manifest.json"],
+      "url": "https://json.schemastore.org/chrome-manifest.json"
+    }
+  ],
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  "window.commandCenter": true,
+  "editor.minimap.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.autoDetectColorScheme": true,
+  "editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.shellIntegration.suggestEnabled": true
+}
