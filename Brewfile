@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "1password/tap"
 brew "btop"
-brew "fx"
 brew "fzf"
 brew "graphviz"
 brew "tmux"
